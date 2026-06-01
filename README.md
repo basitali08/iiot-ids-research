@@ -281,7 +281,7 @@ If this work is useful for your research, please cite:
 ```bibtex
 @misc{ali2026lightweight,
   title={Lightweight Federated Intrusion Detection for Industrial IoT Using Pruned CNN-GRU Networks},
-  author={Ali, Basit and Salam, Abdus},
+  author={Ali, Basit},
   year={2026},
   note={Preprint}
 }
