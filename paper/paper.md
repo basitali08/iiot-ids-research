@@ -1,14 +1,14 @@
 # Lightweight Federated Intrusion Detection for Industrial IoT Using Pruned CNN-GRU Networks
 
-**Authors:** Anonymous Author(s)  
-**Affiliation:** Anonymous Institution  
-**Contact:** anonymous@submission.edu
+**Authors:** Basit Ali  
+**Affiliation:** Abdul Wali Khan University Mardan, Mardan, Pakistan  
+**Contact:** whoisbasit@gmail.com
 
 ---
 
 ## Abstract
 
-The Industrial Internet of Things (IIoT) has introduced critical cybersecurity challenges demanding accurate, real-time intrusion detection while preserving data privacy. Recent CNN-BiLSTM models integrated with Federated Learning (FL) achieve high detection accuracy (97.8%) but rely on computationally expensive architectures unsuitable for resource-constrained edge devices. This paper proposes a lightweight CNN-GRU architecture for FL-based IIoT intrusion detection that bridges the gap between detection performance and edge deployability. We introduce three innovations: (1) replacing Bi-LSTM with Gated Recurrent Units (GRU) to reduce parameters while preserving temporal modeling, (2) employing depthwise separable convolutions for efficient spatial feature extraction, and (3) applying weight pruning with INT8 quantization for additional compression. Experiments on three real benchmark IIoT datasets (X-IIoTID, WUSTL-IIoT-2021, and Edge-IIoTset) demonstrate that our lightweight model achieves 99.58–100% binary detection accuracy while reducing model size by 94.6% (3.75 MB → 0.20 MB), parameters by 94.6% (981K → 53K), and inference time by 3.1–3.5× versus the CNN-BiLSTM baseline. INT8 quantization yields a final model of only 32 KB — a 99.1% reduction. Under federated learning, the model converges rapidly in both IID and non-IID settings. Extended to 15-class attack classification, it achieves 95.47% accuracy, within 0.33% of the baseline, confirming its versatility for real-world IIoT deployments.
+The Industrial Internet of Things (IIoT) has introduced critical cybersecurity challenges demanding accurate, real-time intrusion detection while preserving data privacy. Recent CNN-BiLSTM models integrated with Federated Learning (FL) achieve high detection accuracy (97.8%) but rely on computationally expensive architectures unsuitable for resource-constrained edge devices. This paper proposes a lightweight CNN-GRU architecture for FL-based IIoT intrusion detection that bridges the gap between detection performance and edge deployability. We introduce three innovations: (1) replacing Bi-LSTM with Gated Recurrent Units (GRU) to reduce parameters while preserving temporal modeling, (2) employing depthwise separable convolutions for efficient spatial feature extraction, and (3) applying weight pruning with INT8 quantization for additional compression. Experiments on three real benchmark IIoT datasets (X-IIoTID, WUSTL-IIoT-2021, and Edge-IIoTset) demonstrate that our lightweight model achieves 99.58–100% binary detection accuracy while reducing model size by 94.5% (3.75 MB → 0.20 MB), parameters by 94.6% (981K → 53K), and inference time by 3.1–3.5× versus the CNN-BiLSTM baseline. INT8 quantization yields a final model of only 33 KB — a 99.1% reduction. Under federated learning, the model converges rapidly in both IID and non-IID settings. Extended to 15-class attack classification, it achieves 95.47% accuracy, within 0.33% of the baseline, confirming its versatility for real-world IIoT deployments.
 
 **Keywords:** Industrial Internet of Things, Intrusion Detection, Federated Learning, Lightweight Deep Learning, CNN-GRU, Edge Computing, Pruning
 
@@ -26,7 +26,7 @@ This paper addresses these gaps by proposing a **lightweight CNN-GRU architectur
 
 1. **Efficient Architecture Design:** We replace the Bidirectional LSTM with Gated Recurrent Units (GRU) and employ depthwise separable convolutions, reducing model parameters from 981K to 53K (94.6% reduction) while maintaining detection accuracy.
 
-2. **Weight Pruning and Quantization:** We apply magnitude-based weight pruning and INT8 dynamic quantization, achieving 99.1% total model size reduction (3.75 MB → 32 KB).
+2. **Weight Pruning and Quantization:** We apply magnitude-based weight pruning and INT8 dynamic quantization, achieving 99.1% total model size reduction (3.75 MB → 33 KB).
 
 3. **Comprehensive Edge Metrics:** Beyond accuracy, we report model size, inference time, FLOPs, and communication cost—metrics essential for practical edge deployment but absent in prior work.
 
@@ -134,7 +134,7 @@ $$
 Q(w) = \text{round}\left(\frac{w}{\Delta}\right) \cdot \Delta, \quad \Delta = \frac{\max|w|}{2^{7}}
 $$
 
-This reduces the storage of quantized layers by $4\times$. Combined with weight pruning (Section 3.4), our smallest model occupies only 32 KB — a 99.1% reduction from the baseline. The quantization is applied post-training and requires no calibration data, making it practical for deployed IIoT devices. Note that on CPU without specialized INT8 accelerators, the quantization overhead can offset inference speed gains for small models; the primary benefit is storage and communication reduction.
+This reduces the storage of quantized layers by $4\times$. Combined with weight pruning (Section 3.4), our smallest model occupies only 33 KB — a 99.1% reduction from the baseline. The quantization is applied post-training and requires no calibration data, making it practical for deployed IIoT devices. Note that on CPU without specialized INT8 accelerators, the quantization overhead can offset inference speed gains for small models; the primary benefit is storage and communication reduction.
 
 ### 3.6 Federated Learning Framework
 
@@ -233,7 +233,7 @@ Tables 3-5 present the centralized training results across three datasets. On WU
 Figure 1 visualizes the efficiency gains across four dimensions. The proposed CNN-GRU achieves:
 
 - **94.6% fewer parameters** (981,379 → 52,998) consistently across all datasets
-- **94.6% smaller model** (3.748 MB → 0.204 MB)
+- **94.5% smaller model** (3.748 MB → 0.204 MB)
 - **3.07-3.52x faster inference** on real datasets (19.76→6.43 ms on WUSTL, 23.89→7.55 ms on X-IIoTID, 13.52→3.84 ms on Edge-IIoTset)
 - **94.1% fewer FLOPs** (6.81M → 0.40M on WUSTL, 7.94M → 0.47M on X-IIoTID, 8.10M → 0.48M on Edge-IIoTset)
 
@@ -287,7 +287,7 @@ Each modification independently reduces model complexity while maintaining accur
 
 ### 5.5 Quantization Results
 
-Table 9 presents the INT8 quantization results. Dynamic quantization reduces model size by 4.2-7.8× with negligible accuracy degradation (≤ 0.27% on X-IIoTID). Combined with pruning, the lightweight CNN-GRU achieves a model size of only 32 KB—a 99.1% reduction from the baseline. The quantized models maintain accuracy within 0.4% of their FP32 counterparts, demonstrating that INT8 quantization is a viable compression technique for resource-constrained IIoT deployment.
+Table 9 presents the INT8 quantization results. Dynamic quantization reduces model size by 4.2-7.8× with negligible accuracy degradation (≤ 0.28% on X-IIoTID). Combined with pruning, the lightweight CNN-GRU achieves a model size of only 33 KB—a 99.1% reduction from the baseline. The quantized models maintain accuracy within 0.4% of their FP32 counterparts, demonstrating that INT8 quantization is a viable compression technique for resource-constrained IIoT deployment.
 
 Inference speed on CPU shows a slight regression (0.7-0.8× of FP32) due to quantize/dequantize overhead outweighing benefits for these already-small models. On edge hardware with INT8 acceleration (e.g., ARM NEON, Intel VNNI), we expect significant speedups. The primary benefit of quantization in this context is storage and communication efficiency.
 
@@ -296,10 +296,10 @@ Inference speed on CPU shows a slight regression (0.7-0.8× of FP32) due to quan
 | Model | FP32 Size | INT8 Size | Reduction | FP32 Acc | INT8 Acc | Δ Acc | Speed |
 |-------|-----------|-----------|-----------|----------|----------|-------|-------|
 | CNN-BiLSTM | 3.748 MB | 0.480 MB | **7.8×** | 0.9945 | 0.9945 | 0.00% | 0.7× |
-| CNN-GRU (Lightweight) | 0.204 MB | 0.046 MB | **4.4×** | 0.9975 | 0.9948 | −0.27% | 0.8× |
+| CNN-GRU (Lightweight) | 0.204 MB | 0.046 MB | **4.4×** | 0.9975 | 0.9948 | −0.28% | 0.8× |
 | Pruned CNN-GRU | 0.136 MB | **0.032 MB** | **4.2×** | 0.9942 | 0.9935 | −0.07% | 0.8× |
 
-*Note: FP32 baseline accuracies are from models trained for this experiment; they differ from Tables 4–5 due to random initialization. The key metric is the accuracy change (Δ) between each model's FP32 and INT8 versions, which remains ≤ 0.27%.*
+*Note: FP32 baseline accuracies are from models trained for this experiment; they differ from Tables 4–5 due to random initialization. The key metric is the accuracy change (Δ) between each model's FP32 and INT8 versions, which remains ≤ 0.28%.*
 
 ### 5.6 Multi-Class Attack Classification
 
@@ -329,7 +329,7 @@ Beyond binary detection, we evaluate our models on 15-class attack type classifi
 
 ## 6. Conclusion and Future Work
 
-This paper presented a lightweight CNN-GRU architecture for federated learning-based intrusion detection in Industrial Internet of Things networks. By replacing Bidirectional LSTM with Gated Recurrent Units, employing depthwise separable convolutions, and applying weight pruning with INT8 quantization, we achieved a 99.1% total model size reduction (3.75 MB → 32 KB) while maintaining detection accuracy within 0.13% of the baseline. Experiments on three real IIoT datasets (X-IIoTID, WUSTL-IIoT-2021, and Edge-IIoTset) demonstrate that the resulting model achieves 99.55-100% binary accuracy and 95.47% multi-class accuracy, making it suitable for deployment on resource-constrained IIoT edge devices. Under federated learning, the model achieves rapid convergence under both IID and non-IID conditions while reducing communication overhead by approximately 95%.
+This paper presented a lightweight CNN-GRU architecture for federated learning-based intrusion detection in Industrial Internet of Things networks. By replacing Bidirectional LSTM with Gated Recurrent Units, employing depthwise separable convolutions, and applying weight pruning with INT8 quantization, we achieved a 99.1% total model size reduction (3.75 MB → 33 KB) while maintaining detection accuracy within 0.13% of the baseline. Experiments on three real IIoT datasets (X-IIoTID, WUSTL-IIoT-2021, and Edge-IIoTset) demonstrate that the resulting model achieves 99.55-100% binary accuracy and 95.47% multi-class accuracy, making it suitable for deployment on resource-constrained IIoT edge devices. Under federated learning, the model achieves rapid convergence under both IID and non-IID conditions while reducing communication overhead by approximately 95%.
 
 **Future work will focus on:**
 1. Deploying quantized models on actual edge hardware (Raspberry Pi, Jetson Nano) with power and latency measurements
@@ -338,7 +338,7 @@ This paper presented a lightweight CNN-GRU architecture for federated learning-b
 
 ## CRediT Authorship Contribution Statement
 
-**Anonymous Author(s):** Conceptualization, Methodology, Software, Validation, Formal Analysis, Investigation, Data Curation, Writing — Original Draft, Writing — Review & Editing, Visualization.
+**Basit Ali:** Conceptualization, Methodology, Software, Validation, Formal Analysis, Investigation, Data Curation, Writing — Original Draft, Writing — Review & Editing, Visualization.
 
 ## Declaration of Competing Interests
 
@@ -351,7 +351,7 @@ The datasets used in this study are publicly available:
 - WUSTL-IIoT-2021: Washington University in St. Louis (https://sites.wustl.edu/iiot-dataset/)
 - Edge-IIoTset: Kaggle (https://www.kaggle.com/datasets/mohamedamineferrag/edgeiiotset-cyber-security-dataset-of-iot-iiot)
 
-The source code for reproducing all experiments is available at [GitHub repository URL].
+The source code for reproducing all experiments is available at https://github.com/basitali08/iiot-ids-research.git.
 
 ## Funding
 
