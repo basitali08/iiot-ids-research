@@ -119,10 +119,10 @@ Datasets are downloaded automatically to `data/` on first run.
 If you use this code in your research, please cite:
 
 ```bibtex
-@article{anonymous2025lightweight,
+@article{ali2025lightweight,
   title={Lightweight Federated Intrusion Detection for Industrial IoT Using Pruned CNN-GRU Networks},
-  author={Anonymous},
-  journal={Ad Hoc Networks},
+  author={Ali, Basit},
+  journal={Ad Hoc Networks (Under Review)},
   year={2025}
 }
 ```
