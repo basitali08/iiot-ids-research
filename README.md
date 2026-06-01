@@ -46,7 +46,9 @@ A lightweight CNN-GRU architecture for Federated Learning-based intrusion detect
 ├── data/                        # Dataset cache (downloaded at runtime)
 ├── results/                      # Experiment outputs and figures
 ├── paper/                        # Paper source (LaTeX + markdown)
-│   ├── paper.tex                 # LaTeX source
+│   ├── simple_paper.tex          # Article-class LaTeX source (Overleaf-ready)
+│   ├── elsarticle.tex            # Elsevier elsarticle LaTeX source
+│   ├── ieee_access.tex           # IEEE Access LaTeX source
 │   ├── paper.md                  # Markdown source
 │   ├── references.bib            # Bibliography
 │   ├── highlights.md             # Journal highlights
@@ -65,8 +67,8 @@ A lightweight CNN-GRU architecture for Federated Learning-based intrusion detect
 
 ```bash
 # Clone the repository
-git clone https://github.com/yourusername/iiot-ids-lightweight
-cd iiot-ids-lightweight
+git clone https://github.com/basitali08/iiot-ids-research
+cd iiot-ids-research
 
 # Create virtual environment (recommended)
 python -m venv venv
