@@ -1,0 +1,54 @@
+{
+  "CNN-GRU_Light": {
+    "pytorch": {
+      "accuracy": 0.99525,
+      "f1_score": 0.9951093951093951,
+      "model_size_mb": 0.217,
+      "inference_time_ms": 1.19
+    },
+    "onnx": {
+      "model_size_mb": 0.206,
+      "inference_time_ms": 0.13,
+      "accuracy": 0.99525
+    },
+    "edge_benchmark": {
+      "mean_ms": 0.09932640078477561,
+      "std_ms": 0.022970505910930306,
+      "p50_ms": 0.09089999366551638,
+      "p95_ms": 0.14619995490647852,
+      "p99_ms": 0.20022601122036573,
+      "samples_per_sec": 10067.816734513915,
+      "num_runs": 500
+    },
+    "compression": {
+      "size_reduction": "5.1%",
+      "speedup_vs_pt": "9.3x"
+    }
+  },
+  "CNN-GRU_Pruned": {
+    "pytorch": {
+      "accuracy": 0.99775,
+      "f1_score": 0.9976762199845082,
+      "model_size_mb": 0.146,
+      "inference_time_ms": 0.89
+    },
+    "onnx": {
+      "model_size_mb": 0.138,
+      "inference_time_ms": 0.1,
+      "accuracy": 0.99775
+    },
+    "edge_benchmark": {
+      "mean_ms": 0.11081660259515047,
+      "std_ms": 0.018482315335760786,
+      "p50_ms": 0.10720000136643648,
+      "p95_ms": 0.12397501268424087,
+      "p99_ms": 0.16923400806263086,
+      "samples_per_sec": 9023.918587843098,
+      "num_runs": 500
+    },
+    "compression": {
+      "size_reduction": "5.7%",
+      "speedup_vs_pt": "9.2x"
+    }
+  }
+}

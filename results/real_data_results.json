@@ -1,0 +1,125 @@
+{
+  "WUSTL-IIoT": {
+    "input_dim": 48,
+    "models": {
+      "CNN-BiLSTM (Baseline)": {
+        "accuracy": 1.0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1_score": 1.0,
+        "auc": 1.0,
+        "model_size_mb": 3.748088836669922,
+        "num_parameters": 981379,
+        "inference_time_ms": 19.758799076080322,
+        "flops_millions": 6.814208,
+        "sparsity": 0.0
+      },
+      "CNN-GRU (Lightweight)": {
+        "accuracy": 1.0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1_score": 1.0,
+        "auc": 0.9999999999999999,
+        "model_size_mb": 0.20439910888671875,
+        "num_parameters": 52998,
+        "inference_time_ms": 6.433656215667725,
+        "flops_millions": 0.402832,
+        "sparsity": 0.0
+      },
+      "Pruned CNN-GRU": {
+        "accuracy": 1.0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1_score": 1.0,
+        "auc": 1.0,
+        "model_size_mb": 0.13553619384765625,
+        "num_parameters": 35234,
+        "inference_time_ms": 4.662380218505859,
+        "flops_millions": 0.2768,
+        "sparsity": 0.16562500000000002
+      }
+    }
+  },
+  "X-IIoTID": {
+    "input_dim": 56,
+    "models": {
+      "CNN-BiLSTM (Baseline)": {
+        "accuracy": 0.99675,
+        "precision": 0.9974200206398349,
+        "recall": 0.9958784131890778,
+        "f1_score": 0.9966486207785512,
+        "auc": 0.9997795581604891,
+        "model_size_mb": 3.748088836669922,
+        "num_parameters": 981379,
+        "inference_time_ms": 23.885326385498047,
+        "flops_millions": 7.94432,
+        "sparsity": 0.0
+      },
+      "CNN-GRU (Lightweight)": {
+        "accuracy": 0.99575,
+        "precision": 0.9989626556016598,
+        "recall": 0.9922720247295209,
+        "f1_score": 0.9956060997673818,
+        "auc": 0.9999179285773444,
+        "model_size_mb": 0.20439910888671875,
+        "num_parameters": 52998,
+        "inference_time_ms": 7.554275989532471,
+        "flops_millions": 0.469224,
+        "sparsity": 0.0
+      },
+      "Pruned CNN-GRU": {
+        "accuracy": 0.9955,
+        "precision": 0.9979285344381149,
+        "recall": 0.9927872230808862,
+        "f1_score": 0.9953512396694215,
+        "auc": 0.9996917317295377,
+        "model_size_mb": 0.13553619384765625,
+        "num_parameters": 35234,
+        "inference_time_ms": 5.292792320251465,
+        "flops_millions": 0.32256,
+        "sparsity": 0.1621527777777778
+      }
+    }
+  },
+  "Edge-IIoTset": {
+    "input_dim": 61,
+    "models": {
+      "CNN-BiLSTM (Baseline)": {
+        "accuracy": 1.0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1_score": 1.0,
+        "auc": 1.0,
+        "model_size_mb": 3.748088836669922,
+        "num_parameters": 981379,
+        "inference_time_ms": 13.523294925689697,
+        "flops_millions": 8.096064,
+        "sparsity": 0.0
+      },
+      "CNN-GRU (Lightweight)": {
+        "accuracy": 1.0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1_score": 1.0,
+        "auc": 1.0,
+        "model_size_mb": 0.20439910888671875,
+        "num_parameters": 52998,
+        "inference_time_ms": 3.840212821960449,
+        "flops_millions": 0.483735,
+        "sparsity": 0.0
+      },
+      "Pruned CNN-GRU": {
+        "accuracy": 1.0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1_score": 1.0,
+        "auc": 1.0,
+        "model_size_mb": 0.13553619384765625,
+        "num_parameters": 35234,
+        "inference_time_ms": 2.6229190826416016,
+        "flops_millions": 0.332848,
+        "sparsity": 0.16657986111111112
+      }
+    }
+  }
+}

@@ -1,0 +1,37 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+venv/
+.venv/
+
+# IDE
+.vscode/
+.idea/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Data files (download from original sources — see README)
+data/WUSTL-IIoT/*.csv
+data/WUSTL-IIoT/*.zip
+data/X-IIoTID/*.csv
+data/X-IIoTID/*.7z
+data/Edge-IIoTset/*.csv
+data/Edge-IIoTset/kaggle/
+data/Edge-IIoTset/hf/*.tar.gz
+data/Edge-IIoTset/hf/sample-v1/*.csv
+data/Edge-IIoTset/hf/features/*.csv
+
+# Large result binaries
+results/deployed/*.onnx
+results/deployed/*.pt
+
+# Generated zips
+submission.zip
+
+# Models cache
+models/__pycache__/
+experiments/__pycache__/
+utils/__pycache__/

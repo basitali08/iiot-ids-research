@@ -1,0 +1,38 @@
+{
+  "CNN-BiLSTM (Baseline)": {
+    "accuracy": 1.0,
+    "precision": 1.0,
+    "recall": 1.0,
+    "f1_score": 1.0,
+    "auc": 1.0,
+    "model_size_mb": 3.748088836669922,
+    "num_parameters": 981379,
+    "inference_time_ms": 14.799184799194336,
+    "flops_millions": 9.07488,
+    "sparsity": 0.0
+  },
+  "CNN-GRU (Lightweight)": {
+    "accuracy": 1.0,
+    "precision": 1.0,
+    "recall": 1.0,
+    "f1_score": 1.0,
+    "auc": 1.0,
+    "model_size_mb": 0.20439910888671875,
+    "num_parameters": 52998,
+    "inference_time_ms": 4.148666858673096,
+    "flops_millions": 0.535779,
+    "sparsity": 0.0
+  },
+  "Pruned CNN-GRU": {
+    "accuracy": 1.0,
+    "precision": 1.0,
+    "recall": 1.0,
+    "f1_score": 1.0,
+    "auc": 1.0,
+    "model_size_mb": 0.13553619384765625,
+    "num_parameters": 35234,
+    "inference_time_ms": 3.1205105781555176,
+    "flops_millions": 0.368432,
+    "sparsity": 0.16666666666666663
+  }
+}

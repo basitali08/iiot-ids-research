@@ -1,0 +1,308 @@
+{
+  "CNN-BiLSTM": {
+    "accuracy": 0.958041958041958,
+    "macro_f1": 0.9585964075766245,
+    "weighted_f1": 0.958596045032806,
+    "model_size_mb": 3.754486083984375,
+    "num_parameters": 983056,
+    "inference_time_ms": 14.33448076248169,
+    "flops_millions": 8.097728,
+    "sparsity": 0.0,
+    "per_class": {
+      "Backdoor": {
+        "precision": 1.0,
+        "recall": 0.935,
+        "f1-score": 0.9664082687338501,
+        "support": 200.0
+      },
+      "DDoS_HTTP": {
+        "precision": 0.9796954314720813,
+        "recall": 0.965,
+        "f1-score": 0.9722921914357683,
+        "support": 200.0
+      },
+      "DDoS_ICMP": {
+        "precision": 1.0,
+        "recall": 0.995,
+        "f1-score": 0.9974937343358395,
+        "support": 200.0
+      },
+      "DDoS_TCP": {
+        "precision": 0.8792270531400966,
+        "recall": 0.9054726368159204,
+        "f1-score": 0.8921568627450981,
+        "support": 201.0
+      },
+      "DDoS_UDP": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1-score": 1.0,
+        "support": 200.0
+      },
+      "Fingerprinting": {
+        "precision": 0.7706422018348624,
+        "recall": 0.84,
+        "f1-score": 0.8038277511961722,
+        "support": 200.0
+      },
+      "MITM": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1-score": 1.0,
+        "support": 201.0
+      },
+      "Normal": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1-score": 1.0,
+        "support": 200.0
+      },
+      "Password": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1-score": 1.0,
+        "support": 200.0
+      },
+      "Port_Scanning": {
+        "precision": 0.8732394366197183,
+        "recall": 0.93,
+        "f1-score": 0.9007263922518159,
+        "support": 200.0
+      },
+      "Ransomware": {
+        "precision": 0.9830508474576272,
+        "recall": 0.87,
+        "f1-score": 0.9230769230769231,
+        "support": 200.0
+      },
+      "SQL_injection": {
+        "precision": 0.9800995024875622,
+        "recall": 0.985,
+        "f1-score": 0.9825436408977556,
+        "support": 200.0
+      },
+      "Uploading": {
+        "precision": 0.985,
+        "recall": 0.9800995024875622,
+        "f1-score": 0.9825436408977556,
+        "support": 201.0
+      },
+      "Vulnerability_scanner": {
+        "precision": 1.0,
+        "recall": 0.97,
+        "f1-score": 0.9847715736040609,
+        "support": 200.0
+      },
+      "XSS": {
+        "precision": 0.9521531100478469,
+        "recall": 0.995,
+        "f1-score": 0.9731051344743277,
+        "support": 200.0
+      }
+    }
+  },
+  "CNN-GRU (Lightweight)": {
+    "accuracy": 0.9547119547119547,
+    "macro_f1": 0.9542779485396903,
+    "weighted_f1": 0.95427905581517,
+    "model_size_mb": 0.20762252807617188,
+    "num_parameters": 53843,
+    "inference_time_ms": 3.7350940704345703,
+    "flops_millions": 0.484567,
+    "sparsity": 0.0,
+    "per_class": {
+      "Backdoor": {
+        "precision": 1.0,
+        "recall": 0.92,
+        "f1-score": 0.9583333333333334,
+        "support": 200.0
+      },
+      "DDoS_HTTP": {
+        "precision": 0.9897435897435898,
+        "recall": 0.965,
+        "f1-score": 0.9772151898734177,
+        "support": 200.0
+      },
+      "DDoS_ICMP": {
+        "precision": 1.0,
+        "recall": 0.99,
+        "f1-score": 0.9949748743718593,
+        "support": 200.0
+      },
+      "DDoS_TCP": {
+        "precision": 0.8281938325991189,
+        "recall": 0.9353233830845771,
+        "f1-score": 0.8785046728971962,
+        "support": 201.0
+      },
+      "DDoS_UDP": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1-score": 1.0,
+        "support": 200.0
+      },
+      "Fingerprinting": {
+        "precision": 0.9858156028368794,
+        "recall": 0.695,
+        "f1-score": 0.8152492668621701,
+        "support": 200.0
+      },
+      "MITM": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1-score": 1.0,
+        "support": 201.0
+      },
+      "Normal": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1-score": 1.0,
+        "support": 200.0
+      },
+      "Password": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1-score": 1.0,
+        "support": 200.0
+      },
+      "Port_Scanning": {
+        "precision": 0.8536585365853658,
+        "recall": 0.875,
+        "f1-score": 0.8641975308641975,
+        "support": 200.0
+      },
+      "Ransomware": {
+        "precision": 0.8048780487804879,
+        "recall": 0.99,
+        "f1-score": 0.8878923766816144,
+        "support": 200.0
+      },
+      "SQL_injection": {
+        "precision": 0.9949238578680203,
+        "recall": 0.98,
+        "f1-score": 0.9874055415617129,
+        "support": 200.0
+      },
+      "Uploading": {
+        "precision": 0.9803921568627451,
+        "recall": 0.9950248756218906,
+        "f1-score": 0.9876543209876543,
+        "support": 201.0
+      },
+      "Vulnerability_scanner": {
+        "precision": 0.9704433497536946,
+        "recall": 0.985,
+        "f1-score": 0.9776674937965261,
+        "support": 200.0
+      },
+      "XSS": {
+        "precision": 0.9801980198019802,
+        "recall": 0.99,
+        "f1-score": 0.9850746268656716,
+        "support": 200.0
+      }
+    }
+  },
+  "Pruned CNN-GRU": {
+    "accuracy": 0.955044955044955,
+    "macro_f1": 0.9557099050921134,
+    "weighted_f1": 0.9557141671695425,
+    "model_size_mb": 0.13717269897460938,
+    "num_parameters": 35663,
+    "inference_time_ms": 3.2294487953186035,
+    "flops_millions": 0.333264,
+    "sparsity": 0.1597095150960659,
+    "per_class": {
+      "Backdoor": {
+        "precision": 1.0,
+        "recall": 0.92,
+        "f1-score": 0.9583333333333334,
+        "support": 200.0
+      },
+      "DDoS_HTTP": {
+        "precision": 0.9794871794871794,
+        "recall": 0.955,
+        "f1-score": 0.9670886075949368,
+        "support": 200.0
+      },
+      "DDoS_ICMP": {
+        "precision": 0.9948979591836735,
+        "recall": 0.975,
+        "f1-score": 0.9848484848484849,
+        "support": 200.0
+      },
+      "DDoS_TCP": {
+        "precision": 0.8803827751196173,
+        "recall": 0.9154228855721394,
+        "f1-score": 0.8975609756097561,
+        "support": 201.0
+      },
+      "DDoS_UDP": {
+        "precision": 1.0,
+        "recall": 0.995,
+        "f1-score": 0.9974937343358395,
+        "support": 200.0
+      },
+      "Fingerprinting": {
+        "precision": 0.7567567567567568,
+        "recall": 0.84,
+        "f1-score": 0.7962085308056872,
+        "support": 200.0
+      },
+      "MITM": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1-score": 1.0,
+        "support": 201.0
+      },
+      "Normal": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1-score": 1.0,
+        "support": 200.0
+      },
+      "Password": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1-score": 1.0,
+        "support": 200.0
+      },
+      "Port_Scanning": {
+        "precision": 0.8815165876777251,
+        "recall": 0.93,
+        "f1-score": 0.9051094890510949,
+        "support": 200.0
+      },
+      "Ransomware": {
+        "precision": 0.9666666666666667,
+        "recall": 0.87,
+        "f1-score": 0.9157894736842105,
+        "support": 200.0
+      },
+      "SQL_injection": {
+        "precision": 0.9707317073170731,
+        "recall": 0.995,
+        "f1-score": 0.9827160493827161,
+        "support": 200.0
+      },
+      "Uploading": {
+        "precision": 0.9948979591836735,
+        "recall": 0.9701492537313433,
+        "f1-score": 0.982367758186398,
+        "support": 201.0
+      },
+      "Vulnerability_scanner": {
+        "precision": 0.9948717948717949,
+        "recall": 0.97,
+        "f1-score": 0.9822784810126582,
+        "support": 200.0
+      },
+      "XSS": {
+        "precision": 0.9428571428571428,
+        "recall": 0.99,
+        "f1-score": 0.9658536585365853,
+        "support": 200.0
+      }
+    }
+  }
+}

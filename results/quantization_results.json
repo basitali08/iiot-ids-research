@@ -1,0 +1,120 @@
+{
+  "WUSTL-IIoT": {
+    "CNN-BiLSTM": {
+      "fp32": {
+        "accuracy": 1.0,
+        "f1_score": 1.0,
+        "model_size_mb": 3.748088836669922,
+        "num_parameters": 981379,
+        "inference_time_ms": 10.212085247039795
+      },
+      "int8": {
+        "accuracy": 1.0,
+        "f1_score": 1.0,
+        "model_size_mb": 0.480010986328125,
+        "num_parameters": 981379,
+        "inference_time_ms": 14.41713571548462
+      },
+      "compression_ratio": 7.808339691016593,
+      "speedup": 0.708329688266136,
+      "accuracy_change": 0.0
+    },
+    "CNN-GRU (Lightweight)": {
+      "fp32": {
+        "accuracy": 1.0,
+        "f1_score": 1.0,
+        "model_size_mb": 0.20439910888671875,
+        "num_parameters": 52998,
+        "inference_time_ms": 3.2107067108154297
+      },
+      "int8": {
+        "accuracy": 1.0,
+        "f1_score": 1.0,
+        "model_size_mb": 0.0459442138671875,
+        "num_parameters": 52998,
+        "inference_time_ms": 3.973228931427002
+      },
+      "compression_ratio": 4.448854201262039,
+      "speedup": 0.808085002457256,
+      "accuracy_change": 0.0
+    },
+    "Pruned CNN-GRU": {
+      "fp32": {
+        "accuracy": 1.0,
+        "f1_score": 1.0,
+        "model_size_mb": 0.13553619384765625,
+        "num_parameters": 35234,
+        "inference_time_ms": 2.243518829345703
+      },
+      "int8": {
+        "accuracy": 1.0,
+        "f1_score": 1.0,
+        "model_size_mb": 0.032135009765625,
+        "num_parameters": 35234,
+        "inference_time_ms": 2.911500930786133
+      },
+      "compression_ratio": 4.217711301044634,
+      "speedup": 0.7705712217443571,
+      "accuracy_change": 0.0
+    }
+  },
+  "X-IIoTID": {
+    "CNN-BiLSTM": {
+      "fp32": {
+        "accuracy": 0.9945,
+        "f1_score": 0.9943240454076367,
+        "model_size_mb": 3.748088836669922,
+        "num_parameters": 981379,
+        "inference_time_ms": 13.943214416503906
+      },
+      "int8": {
+        "accuracy": 0.9945,
+        "f1_score": 0.9943240454076367,
+        "model_size_mb": 0.480010986328125,
+        "num_parameters": 981379,
+        "inference_time_ms": 18.39320182800293
+      },
+      "compression_ratio": 7.808339691016593,
+      "speedup": 0.7580634707805961,
+      "accuracy_change": 0.0
+    },
+    "CNN-GRU (Lightweight)": {
+      "fp32": {
+        "accuracy": 0.9975,
+        "f1_score": 0.997421351211965,
+        "model_size_mb": 0.20439910888671875,
+        "num_parameters": 52998,
+        "inference_time_ms": 3.953683376312256
+      },
+      "int8": {
+        "accuracy": 0.99475,
+        "f1_score": 0.9945806451612903,
+        "model_size_mb": 0.0459442138671875,
+        "num_parameters": 52998,
+        "inference_time_ms": 4.938223361968994
+      },
+      "compression_ratio": 4.448854201262039,
+      "speedup": 0.8006287052062024,
+      "accuracy_change": -0.00275000000000003
+    },
+    "Pruned CNN-GRU": {
+      "fp32": {
+        "accuracy": 0.99425,
+        "f1_score": 0.9940583828468096,
+        "model_size_mb": 0.13553619384765625,
+        "num_parameters": 35234,
+        "inference_time_ms": 2.7260446548461914
+      },
+      "int8": {
+        "accuracy": 0.9935,
+        "f1_score": 0.99328165374677,
+        "model_size_mb": 0.032135009765625,
+        "num_parameters": 35234,
+        "inference_time_ms": 3.5472655296325684
+      },
+      "compression_ratio": 4.217711301044634,
+      "speedup": 0.768491851561098,
+      "accuracy_change": -0.0007499999999999174
+    }
+  }
+}
