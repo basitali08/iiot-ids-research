@@ -123,7 +123,7 @@ If you use this code in your research, please cite:
 @misc{ali2025lightweight,
   title={Lightweight Federated Intrusion Detection for Industrial IoT Using Pruned CNN-GRU Networks},
   author={Ali, Basit},
-  year={2025},
+  year={2026},
   note={Preprint}
 }
 ```
