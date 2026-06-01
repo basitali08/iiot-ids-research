@@ -126,7 +126,7 @@ if __name__ == '__main__':
     if os.path.exists(edge_path):
         datasets_config.append(('Edge-IIoTset', load_and_preprocess_edge_iiotset, edge_path))
 
-    xiiotid_path = os.path.join(data_dir, 'X-IIoTID', 'X-IIoTID.csv')
+    xiiotid_path = os.path.join(data_dir, 'X-IIoTID', 'Binary-X-IIoTD.csv')
     if os.path.exists(xiiotid_path):
         datasets_config.append(('X-IIoTID', load_and_preprocess_xiiotid, xiiotid_path))
 

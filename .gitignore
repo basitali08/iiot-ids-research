@@ -21,15 +21,30 @@ data/X-IIoTID/*.7z
 data/Edge-IIoTset/*.csv
 data/Edge-IIoTset/kaggle/
 data/Edge-IIoTset/hf/*.tar.gz
-data/Edge-IIoTset/hf/sample-v1/*.csv
+data/Edge-IIoTset/hf/sample-v1/**
 data/Edge-IIoTset/hf/features/*.csv
 
 # Large result binaries
 results/deployed/*.onnx
 results/deployed/*.pt
 
-# Generated zips
+# Generated zips & PDFs
 submission.zip
+*.zip
+*.pdf
+
+# Duplicate/export directories
+overleaf/
+ieee_overleaf/
+ieee_access/
+elsarticle_pkg/
+
+# Utility scripts
+check_pdf.py
+check_pdf2.py
+
+# Generated Word docs
+*.docx
 
 # Models cache
 models/__pycache__/
