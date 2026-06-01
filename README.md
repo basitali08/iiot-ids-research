@@ -6,8 +6,7 @@
 
 This repository contains the official implementation of the paper:
 
-> **"Lightweight Federated Intrusion Detection for Industrial IoT Using Pruned CNN-GRU Networks"**  
-> Submitted to *Ad Hoc Networks* (Elsevier)
+> **"Lightweight Federated Intrusion Detection for Industrial IoT Using Pruned CNN-GRU Networks"**
 
 ## Overview
 
@@ -121,11 +120,11 @@ Datasets are downloaded automatically to `data/` on first run.
 If you use this code in your research, please cite:
 
 ```bibtex
-@article{ali2025lightweight,
+@misc{ali2025lightweight,
   title={Lightweight Federated Intrusion Detection for Industrial IoT Using Pruned CNN-GRU Networks},
   author={Ali, Basit},
-  journal={Ad Hoc Networks (Under Review)},
-  year={2025}
+  year={2025},
+  note={Preprint}
 }
 ```
 
